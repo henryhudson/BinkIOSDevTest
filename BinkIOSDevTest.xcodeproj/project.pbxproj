@@ -13,6 +13,10 @@
 		4EA26428250F98DE00DF8863 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA26427250F98DE00DF8863 /* Preview Assets.xcassets */; };
 		4EA26433250F98DF00DF8863 /* BinkIOSDevTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA26432250F98DF00DF8863 /* BinkIOSDevTestTests.swift */; };
 		4EA2643E250F98DF00DF8863 /* BinkIOSDevTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2643D250F98DF00DF8863 /* BinkIOSDevTestUITests.swift */; };
+		4EA2644C250F9C7A00DF8863 /* GetJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2644B250F9C7A00DF8863 /* GetJSON.swift */; };
+		4EA2644E250F9DEB00DF8863 /* CategoriesJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2644D250F9DEB00DF8863 /* CategoriesJSON.swift */; };
+		4EA26450250FA3F600DF8863 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2644F250FA3F600DF8863 /* RemoteImage.swift */; };
+		4EA26452250FA66B00DF8863 /* ListOfCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA26451250FA66B00DF8863 /* ListOfCategories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		4EA26439250F98DF00DF8863 /* BinkIOSDevTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinkIOSDevTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA2643D250F98DF00DF8863 /* BinkIOSDevTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinkIOSDevTestUITests.swift; sourceTree = "<group>"; };
 		4EA2643F250F98DF00DF8863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EA2644B250F9C7A00DF8863 /* GetJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetJSON.swift; sourceTree = "<group>"; };
+		4EA2644D250F9DEB00DF8863 /* CategoriesJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesJSON.swift; sourceTree = "<group>"; };
+		4EA2644F250FA3F600DF8863 /* RemoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		4EA26451250FA66B00DF8863 /* ListOfCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCategories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 			children = (
 				4EA26420250F98DB00DF8863 /* BinkIOSDevTestApp.swift */,
 				4EA26422250F98DB00DF8863 /* ContentView.swift */,
+				4EA26451250FA66B00DF8863 /* ListOfCategories.swift */,
+				4EA2644B250F9C7A00DF8863 /* GetJSON.swift */,
+				4EA2644D250F9DEB00DF8863 /* CategoriesJSON.swift */,
+				4EA2644F250FA3F600DF8863 /* RemoteImage.swift */,
 				4EA26424250F98DE00DF8863 /* Assets.xcassets */,
 				4EA26429250F98DE00DF8863 /* Info.plist */,
 				4EA26426250F98DE00DF8863 /* Preview Content */,
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA2644C250F9C7A00DF8863 /* GetJSON.swift in Sources */,
 				4EA26423250F98DB00DF8863 /* ContentView.swift in Sources */,
 				4EA26421250F98DB00DF8863 /* BinkIOSDevTestApp.swift in Sources */,
+				4EA26450250FA3F600DF8863 /* RemoteImage.swift in Sources */,
+				4EA26452250FA66B00DF8863 /* ListOfCategories.swift in Sources */,
+				4EA2644E250F9DEB00DF8863 /* CategoriesJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
