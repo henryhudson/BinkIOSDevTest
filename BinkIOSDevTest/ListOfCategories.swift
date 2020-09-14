@@ -9,22 +9,35 @@ import SwiftUI
 
 struct ListOfCategories: View {
     @State private var catInfo: [CategoryInfo] = [CategoryInfo]()
-    @State private var catNames: [String] = []
-    @State private var catImages: [String] = []
-    @State private var catDescriptions: [String] = []
     
     var body: some View {
         ZStack {
-            VStack {
-                if catInfo.count > 0 {
-                    
-                    Text(catInfo[0].strCategory)
-                    
-                    RemoteImage(url: catInfo[0].strCategoryThumb, loading: Image(systemName: "icloud"), failure: Image(systemName: "xmark.circle"))
-                        .frame(width: 100, height: 100, alignment: .center)
-                    Text(catInfo[0].strCategoryDescription)
-                    
+            NavigationView {
+                ScrollView {
+                    VStack {
+                        if catInfo.count > 0 {
+                            
+                            ForEach(0 ..< catInfo.count) { i in
+                                ZStack {
+                                    RemoteImage(url: catInfo[i].strCategoryThumb, loading: Image(systemName: "icloud"), failure: Image(systemName: "xmark.circle"))
+                                        .scaledToFit()
+                                
+                                    NavigationLink(
+                                        destination: RecipiesForCategory(selectedCategory: catInfo[i].strCategory) ,
+                                        label: {
+                                            Text(catInfo[i].strCategory)
+                                                .foregroundColor(.black)
+                                                .font(.title)
+                                                .bold()
+                                                .shadow(color: .yellow, radius: 1, x: 0, y: 0)
+                                        })
+                                }
+                            }
+        //                    Text(catInfo[0].strCategoryDescription)
+                        }
+                    }
                 }
+                .navigationTitle("Categories")
             }
         }
         .onAppear {
@@ -33,14 +46,6 @@ struct ListOfCategories: View {
                     if let data = data {
                         
                         catInfo = data.categories
-                        
-                        
-                        for i in catInfo {
-                            catNames.append(i.strCategory)
-                            catImages.append(i.strCategoryThumb)
-                            catDescriptions.append(i.strCategoryDescription)
-                            
-                        }
                         
                     }
                 }

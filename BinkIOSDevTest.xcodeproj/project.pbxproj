@@ -17,6 +17,10 @@
 		4EA2644E250F9DEB00DF8863 /* CategoriesJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2644D250F9DEB00DF8863 /* CategoriesJSON.swift */; };
 		4EA26450250FA3F600DF8863 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2644F250FA3F600DF8863 /* RemoteImage.swift */; };
 		4EA26452250FA66B00DF8863 /* ListOfCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA26451250FA66B00DF8863 /* ListOfCategories.swift */; };
+		4EA26454251011E700DF8863 /* RecipiesForCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA26453251011E700DF8863 /* RecipiesForCategory.swift */; };
+		4EA26456251016E300DF8863 /* RecipiesForCategoryJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA26455251016E300DF8863 /* RecipiesForCategoryJSON.swift */; };
+		4EA264582510290800DF8863 /* ActualRecipie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA264572510290800DF8863 /* ActualRecipie.swift */; };
+		4EA2645A251030BF00DF8863 /* ARecipieJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA26459251030BF00DF8863 /* ARecipieJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		4EA2644D250F9DEB00DF8863 /* CategoriesJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesJSON.swift; sourceTree = "<group>"; };
 		4EA2644F250FA3F600DF8863 /* RemoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		4EA26451250FA66B00DF8863 /* ListOfCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCategories.swift; sourceTree = "<group>"; };
+		4EA26453251011E700DF8863 /* RecipiesForCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesForCategory.swift; sourceTree = "<group>"; };
+		4EA26455251016E300DF8863 /* RecipiesForCategoryJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesForCategoryJSON.swift; sourceTree = "<group>"; };
+		4EA264572510290800DF8863 /* ActualRecipie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualRecipie.swift; sourceTree = "<group>"; };
+		4EA26459251030BF00DF8863 /* ARecipieJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARecipieJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				4EA26420250F98DB00DF8863 /* BinkIOSDevTestApp.swift */,
 				4EA26422250F98DB00DF8863 /* ContentView.swift */,
 				4EA26451250FA66B00DF8863 /* ListOfCategories.swift */,
+				4EA26453251011E700DF8863 /* RecipiesForCategory.swift */,
+				4EA264572510290800DF8863 /* ActualRecipie.swift */,
+				4EA26459251030BF00DF8863 /* ARecipieJSON.swift */,
+				4EA26455251016E300DF8863 /* RecipiesForCategoryJSON.swift */,
 				4EA2644B250F9C7A00DF8863 /* GetJSON.swift */,
 				4EA2644D250F9DEB00DF8863 /* CategoriesJSON.swift */,
 				4EA2644F250FA3F600DF8863 /* RemoteImage.swift */,
@@ -272,9 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA2644C250F9C7A00DF8863 /* GetJSON.swift in Sources */,
+				4EA264582510290800DF8863 /* ActualRecipie.swift in Sources */,
 				4EA26423250F98DB00DF8863 /* ContentView.swift in Sources */,
+				4EA26454251011E700DF8863 /* RecipiesForCategory.swift in Sources */,
+				4EA26456251016E300DF8863 /* RecipiesForCategoryJSON.swift in Sources */,
 				4EA26421250F98DB00DF8863 /* BinkIOSDevTestApp.swift in Sources */,
 				4EA26450250FA3F600DF8863 /* RemoteImage.swift in Sources */,
+				4EA2645A251030BF00DF8863 /* ARecipieJSON.swift in Sources */,
 				4EA26452250FA66B00DF8863 /* ListOfCategories.swift in Sources */,
 				4EA2644E250F9DEB00DF8863 /* CategoriesJSON.swift in Sources */,
 			);
