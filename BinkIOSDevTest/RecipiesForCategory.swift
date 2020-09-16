@@ -31,7 +31,7 @@ struct RecipiesForCategory: View {
                                             .foregroundColor(.white)
                                             .bold()
                                             .offset(y: 100)
-                                            .shadow(color: .secondary, radius: 1.5, x: 0.0, y: 0.0)
+                                            .shadow(color: .black, radius: 1.5, x: 0.0, y: 0.0)
                                     }
                                 }
                                 
