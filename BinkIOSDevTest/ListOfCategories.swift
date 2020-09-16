@@ -22,7 +22,7 @@ struct ListOfCategories: View {
                                     NavigationLink(
                                         destination: RecipiesForCategory(selectedCategory: catInfo[i].strCategory) ,
                                         label: {
-                                            VStack {
+                                            ZStack(alignment: .bottom) {
                                                 RemoteImage(url: catInfo[i].strCategoryThumb, loading: Image(systemName: "icloud"), failure: Image(systemName: "xmark.circle"))
                                                     .scaledToFit()
                                                 
@@ -30,6 +30,7 @@ struct ListOfCategories: View {
                                                     .foregroundColor(.white)
                                                     .font(.title)
                                                     .bold()
+                                                    .offset(x: 0, y: -50)
                                                     .shadow(color: .black, radius: 1, x: 0, y: 0)
                                             }
                                         })

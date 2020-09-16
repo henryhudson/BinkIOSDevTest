@@ -12,36 +12,34 @@ struct RecipiesForCategory: View {
     @State var selectedCategory: String //= "Seafood"
     
     var body: some View {
-        ZStack {
-            NavigationView {
-                ScrollView {
-                    VStack {
-                        if mealInfo.count > 0 {
+    ZStack {
+            ScrollView {
+                VStack {
+                    if mealInfo.count > 0 {
+                        
+                        ForEach( 0 ..< mealInfo.count) { i in
                             
-                            ForEach( 0 ..< mealInfo.count) { i in
-                                
-                                NavigationLink(
-                                    destination: Text(mealInfo[i].strMeal),
-                                    label: {
-                                        ZStack {
-                                            RemoteImage(url: mealInfo[i].strMealThumb, loading: Image(systemName: "icloud"), failure: Image(systemName: "xmark.circle"))
-                                                .scaledToFit()
-                                            
-                                            Text(mealInfo[i].strMeal)
-                                                .font(.title2)
-                                                .foregroundColor(.white)
-                                                .bold()
-                                                .offset(y: 100)
-                                                .shadow(color: .secondary, radius: 1.5, x: 0.0, y: 0.0)
-                                        }
+                            NavigationLink(
+                                destination: ActualRecipie(mealTitle: mealInfo[i].strMeal),
+                                label: {
+                                    ZStack {
+                                        RemoteImage(url: mealInfo[i].strMealThumb, loading: Image(systemName: "icloud"), failure: Image(systemName: "xmark.circle"))
+                                            .scaledToFit()
+                                        
+                                        Text(mealInfo[i].strMeal)
+                                            .font(.title2)
+                                            .foregroundColor(.white)
+                                            .bold()
+                                            .offset(y: 100)
+                                            .shadow(color: .secondary, radius: 1.5, x: 0.0, y: 0.0)
                                     }
-                                    
-                                )
-                            }
+                                }
+                                
+                            )
                         }
                     }
                 }
-                .navigationBarHidden(true)
+            
             }
         }
         .onAppear {

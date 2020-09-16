@@ -17,6 +17,9 @@ struct ActualRecipie: View {
     @State var youtubeLink = "https://www.youtube.com/watch?v=1IszT_guI08"
     @State var mealTitle = "Spicy Arrabiata Penne"
     
+    var ingredients = ["penne rigate - 1 pound", "olive oil - 1/4 cup", "garlic - 3 cloves", "chopped tomatoes - 1 tin", "red chili flakes 1/2 teaspoon", "Italian seasoning 1/2 teaspoon", "basil - 6 leafs", "parmigiono-reggiano - sprinkling"]
+    
+    
     var body: some View {
         ZStack {
             
@@ -35,6 +38,21 @@ struct ActualRecipie: View {
                         .padding(.horizontal)
                     
                     Link("Video Recipie", destination: URL(string: youtubeLink)!)
+                    
+                    
+                    Text("Ingredients")
+                        .font(.title3)
+                        .bold()
+                        .offset(x: -UIScreen.main.bounds.width / 3)
+                        
+                    
+                    
+                    ForEach(ingredients, id: \.self) { data in
+                        Text(data)
+                        Divider()
+                    }
+                    .padding(.horizontal)
+                    
                     
                 }
             }
