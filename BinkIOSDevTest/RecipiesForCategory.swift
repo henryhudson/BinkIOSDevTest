@@ -28,7 +28,7 @@ struct RecipiesForCategory: View {
                                                 .scaledToFit()
                                             
                                             Text(mealInfo[i].strMeal)
-                                                .font(.headline)
+                                                .font(.title2)
                                                 .foregroundColor(.white)
                                                 .bold()
                                                 .offset(y: 100)
@@ -41,7 +41,7 @@ struct RecipiesForCategory: View {
                         }
                     }
                 }
-                .navigationTitle(selectedCategory)
+                .navigationBarHidden(true)
             }
         }
         .onAppear {

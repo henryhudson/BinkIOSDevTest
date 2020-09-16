@@ -11,7 +11,8 @@ import SwiftUI
 struct BinkIOSDevTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ListOfCategories()
+            ActualRecipie()
         }
     }
 }

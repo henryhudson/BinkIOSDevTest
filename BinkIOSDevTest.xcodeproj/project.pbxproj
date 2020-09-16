@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E6B3A4125124BDB005514F4 /* VideoPlayerFromWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B3A4025124BDB005514F4 /* VideoPlayerFromWeb.swift */; };
 		4EA26421250F98DB00DF8863 /* BinkIOSDevTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA26420250F98DB00DF8863 /* BinkIOSDevTestApp.swift */; };
 		4EA26423250F98DB00DF8863 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA26422250F98DB00DF8863 /* ContentView.swift */; };
 		4EA26425250F98DE00DF8863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA26424250F98DE00DF8863 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E6B3A4025124BDB005514F4 /* VideoPlayerFromWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerFromWeb.swift; sourceTree = "<group>"; };
 		4EA2641D250F98DB00DF8863 /* BinkIOSDevTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinkIOSDevTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA26420250F98DB00DF8863 /* BinkIOSDevTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinkIOSDevTestApp.swift; sourceTree = "<group>"; };
 		4EA26422250F98DB00DF8863 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				4EA26455251016E300DF8863 /* RecipiesForCategoryJSON.swift */,
 				4EA2644B250F9C7A00DF8863 /* GetJSON.swift */,
 				4EA2644D250F9DEB00DF8863 /* CategoriesJSON.swift */,
+				4E6B3A4025124BDB005514F4 /* VideoPlayerFromWeb.swift */,
 				4EA2644F250FA3F600DF8863 /* RemoteImage.swift */,
 				4EA26424250F98DE00DF8863 /* Assets.xcassets */,
 				4EA26429250F98DE00DF8863 /* Info.plist */,
@@ -293,6 +296,7 @@
 				4EA2645A251030BF00DF8863 /* ARecipieJSON.swift in Sources */,
 				4EA26452250FA66B00DF8863 /* ListOfCategories.swift in Sources */,
 				4EA2644E250F9DEB00DF8863 /* CategoriesJSON.swift in Sources */,
+				4E6B3A4125124BDB005514F4 /* VideoPlayerFromWeb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

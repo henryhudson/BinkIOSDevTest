@@ -18,18 +18,20 @@ struct ListOfCategories: View {
                         if catInfo.count > 0 {
                             
                             ForEach(0 ..< catInfo.count) { i in
-                                ZStack {
-                                    RemoteImage(url: catInfo[i].strCategoryThumb, loading: Image(systemName: "icloud"), failure: Image(systemName: "xmark.circle"))
-                                        .scaledToFit()
-                                
+                                VStack {
                                     NavigationLink(
                                         destination: RecipiesForCategory(selectedCategory: catInfo[i].strCategory) ,
                                         label: {
-                                            Text(catInfo[i].strCategory)
-                                                .foregroundColor(.black)
-                                                .font(.title)
-                                                .bold()
-                                                .shadow(color: .yellow, radius: 1, x: 0, y: 0)
+                                            VStack {
+                                                RemoteImage(url: catInfo[i].strCategoryThumb, loading: Image(systemName: "icloud"), failure: Image(systemName: "xmark.circle"))
+                                                    .scaledToFit()
+                                                
+                                                Text(catInfo[i].strCategory)
+                                                    .foregroundColor(.white)
+                                                    .font(.title)
+                                                    .bold()
+                                                    .shadow(color: .black, radius: 1, x: 0, y: 0)
+                                            }
                                         })
                                 }
                             }
